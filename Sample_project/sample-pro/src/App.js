@@ -5,12 +5,10 @@ import './App.css';
 import Post from './Post';
 import Button from 'react-bootstrap/Button';
 import {InputGroup, FormControl} from 'react-bootstrap';
-// import { makeStyles } from '@material-ui/core/styles';
-// import Accordion from '@material-ui/core/Accordion';
-// import AccordionSummary from '@material-ui/core/AccordionSummary';
-// import AccordionDetails from '@material-ui/core/AccordionDetails';
-// import Typography from '@material-ui/core/Typography';
-// import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
+import Component1 from './Component1';
+import Component2 from './Component2';
+import Component3 from './Component3';
+import Component4 from './Component4';
 
 const App = () =>{
   return (
@@ -22,16 +20,12 @@ const App = () =>{
       <InputGroup.Text id="inputGroup-sizing-default">Default</InputGroup.Text>
       <FormControl aria-label="Default" aria-describedby="inputGroup-sizing-default"/>
       </InputGroup>
+      <Component1/>
+      <Component2/>
+      <Component3 name="function based component"/>
+      <Component4 name=" class based component"/>
     </div>      
   );
 }
-// function App() {
-//   return (
-//     <div>
-//        <h1>My first react project</h1>
-//        <Post/>
-//     </div>
-//   );
-// }
 
 export default App;
