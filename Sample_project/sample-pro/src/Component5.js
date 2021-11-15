@@ -3,8 +3,10 @@ import React,{useState} from "react";
 import { Form,Button } from "react-bootstrap";
 
 import './Component5.css';
+import Component6 from "./Component6";
 
 const Component5 = ()=>{
+    const emailArray = ['firstemail@gmail.com']
     const [state,setState] = useState({
         email : "",
         pw: ""
@@ -49,6 +51,7 @@ const Component5 = ()=>{
         <Form.Check type="checkbox" label="Check me out" />
         </Form.Group>
         <Button variant="primary" type="submit">Submit</Button>
+        <Component6 email={emailArray}/>
         </Form>
         </div>
     );    
