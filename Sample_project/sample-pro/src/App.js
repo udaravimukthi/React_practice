@@ -10,7 +10,11 @@ import Component2 from './Component2';
 import Component3 from './Component3';
 import Component4 from './Component4';
 import Component5 from './Component5';
-import Component6 from './Component6';
+// import Component6 from './Component6';
+import NavBar from './NavBar';
+import R1com from './R1com';
+import R2com from './R2com';
+import { BrowserRouter } from 'react-router-dom';
 
 const App = () =>{
   return (
@@ -27,7 +31,13 @@ const App = () =>{
       <Component3 name="function based component"/>
       <Component4 name=" class based component"/>
       <Component5/>
-      {/* <Component6/> */}
+      
+      <BrowserRouter>
+      <NavBar/>
+      <R1com/>
+      <R2com/>
+      </BrowserRouter>
+
     </div>      
   );
 }
