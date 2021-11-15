@@ -9,6 +9,7 @@ import Component1 from './Component1';
 import Component2 from './Component2';
 import Component3 from './Component3';
 import Component4 from './Component4';
+import Component5 from './Component5';
 
 const App = () =>{
   return (
@@ -24,6 +25,7 @@ const App = () =>{
       <Component2/>
       <Component3 name="function based component"/>
       <Component4 name=" class based component"/>
+      <Component5/>
     </div>      
   );
 }
