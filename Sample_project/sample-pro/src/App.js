@@ -14,7 +14,7 @@ import Component5 from './Component5';
 import NavBar from './NavBar';
 import R1com from './R1com';
 import R2com from './R2com';
-import { BrowserRouter } from 'react-router-dom';
+import {Route,Routes, BrowserRouter } from 'react-router-dom';
 
 const App = () =>{
   return (
@@ -34,8 +34,10 @@ const App = () =>{
       
       <BrowserRouter>
       <NavBar/>
-      <R1com/>
-      <R2com/>
+      <Routes>
+      <Route path="/R1component/:id" element= {<R1com/>}/>
+      <Route path="/R2component" element={<R2com/>}/>
+      </Routes>
       </BrowserRouter>
 
     </div>      
